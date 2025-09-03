@@ -1,0 +1,159 @@
+body {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffe3f7 0%, #e0c3fc 100%);
+    color: #7d3cff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #ffb6e6 0%, #d1c4e9 100%);
+    color: #fff;
+    padding: 28px 0 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 0 4px 16px #e0c3fc55;
+}
+
+main {
+    max-width: 900px;
+    margin: 36px auto;
+    background: #fff0fa;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #e0c3fc44;
+}
+
+h1, h2, h3 {
+    color: #d500f9;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-first {
+    margin-bottom: 24px;
+    line-height: 1.7;
+    text-align: center;
+    color: #a259c6;
+}
+
+/* Corazón palpitando visual */
+.heart {
+    width: 60px;
+    height: 54px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 24px auto;
+    animation: heartbeat 1.2s infinite;
+    filter: drop-shadow(0 2px 8px #ffb6e6aa);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 30px;
+    height: 48px;
+    background: linear-gradient(135deg, #ffb6e6 0%, #ff4b7d 100%);
+    border-radius: 30px 30px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    box-shadow: 0 2px 8px #ffb6e655;
+}
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+.heart {
+    animation: heartbeat 1.2s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(1.12);
+    }
+    20%, 40% {
+        transform: scale(0.96);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    60%, 80% {
+        transform: scale(1);
+    }
+}
+
+a {
+    color: #ff4b7d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    border-bottom: 2px dotted #ffb6e6;
+}
+
+a:hover {
+    color: #d500f9;
+    text-decoration: underline;
+    border-bottom: 2px solid #d500f9;
+}
+
+.galeria-cute {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 28px;
+    max-width: 700px;
+    margin: 40px auto 32px auto;
+    padding: 18px;
+    background: #fff6fb;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #ffb6e655;
+}
+
+.img-cute img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #ffb6e6aa;
+    margin-bottom: 10px;
+}
+.img-cute:hover {
+    transform: scale(1.04) rotate(-2deg);
+    background: #f3d1fa;
+}
+.img-cute img {
+    width: 100%;
+    max-width: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #ffb6e6aa;
+    margin-bottom: 10px;
+}
+.desc-cute {
+    color: #d500f9;
+    font-size: 1.1em;
+    margin-top: 8px;
+    background: #fff0fa;
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: 0 1px 4px #e0c3fc33;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background: #ffe3f7;
+    color: #a259c6;
+    text-align: center;
+    padding: 14px 0;
+    /* position: fixed; */ /* Elimina o comenta esta línea */
+    width: 100%;
+    /* bottom: 0; */      /* Elimina o comenta esta línea */
+    font-size: 1.1em;
+    border-top: 2px dashed #ffb6e6;
+    box-shadow: 0 -2px 12px #e0c3fc33;
+}

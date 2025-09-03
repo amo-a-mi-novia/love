@@ -145,15 +145,15 @@ a:hover {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 .gif-corazon {
-    width: 220px;
-    height: 220px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     display: block;
     margin: 0 auto 18px auto;
-    /* Forma de corazón usando clip-path */
-    clip-path: path('M110 200 Q 0 120 55 60 Q 110 0 165 60 Q 220 120 110 200 Z');
+    border-radius: 16px; /* Bordes suavemente redondeados */
     box-shadow: 0 4px 16px #ffb6e6aa;
     background: #fff0fa;
+    clip-path: none; /* Quita la forma de corazón */
 }
 
 footer {
@@ -169,3 +169,4 @@ footer {
     box-shadow: 0 -2px 12px #e0c3fc33;
 
 }
+

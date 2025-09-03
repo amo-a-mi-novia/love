@@ -144,6 +144,17 @@ a:hover {
     box-shadow: 0 1px 4px #e0c3fc33;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
+.gif-corazon {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 18px auto;
+    /* Forma de corazón usando clip-path */
+    clip-path: path('M110 200 Q 0 120 55 60 Q 110 0 165 60 Q 220 120 110 200 Z');
+    box-shadow: 0 4px 16px #ffb6e6aa;
+    background: #fff0fa;
+}
 
 footer {
     background: #ffe3f7;
@@ -156,4 +167,5 @@ footer {
     font-size: 1.1em;
     border-top: 2px dashed #ffb6e6;
     box-shadow: 0 -2px 12px #e0c3fc33;
+
 }
